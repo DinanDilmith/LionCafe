@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69299E79-C5CD-4860-8B2E-C086A1175BAD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Caffe</RootNamespace>
+    <AssemblyName>Caffe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\..\..\Documents\UI Design\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminMenu.Designer.cs">
+      <DependentUpon>adminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminMenu2.Designer.cs">
+      <DependentUpon>adminMenu2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccountCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccountCustomer.Designer.cs">
+      <DependentUpon>CreateAccountCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminLogging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminLogging.Designer.cs">
+      <DependentUpon>adminLogging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logging.Designer.cs">
+      <DependentUpon>logging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuform.Designer.cs">
+      <DependentUpon>menuform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="adminLogging.resx">
+      <DependentUpon>adminLogging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminMenu.resx">
+      <DependentUpon>adminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminMenu2.resx">
+      <DependentUpon>adminMenu2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccountCustomer.resx">
+      <DependentUpon>CreateAccountCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logging.resx">
+      <DependentUpon>logging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuform.resx">
+      <DependentUpon>menuform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 191.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop - 111.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
