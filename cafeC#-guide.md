@@ -2,7 +2,7 @@ This is a simple project developed using c# for academic purposes. This project 
 
 configuring database - 
 
-I used "MS SQL Server" as the database for this system. I'm unable to retrieve the database code so you have to create a database which matches to the properties in this code. you can do this by taking a look at tables and fields in the c# code and it'll take some effort. 
+I used "MS SQL Server" as the database for this system. I added the SQL query file named "cafe mgt.sql" along with the project. You can just run the query in SQL server.
 
 user guide-
 
