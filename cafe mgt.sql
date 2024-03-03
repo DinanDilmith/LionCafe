@@ -1,4 +1,8 @@
- CREATE DATABASE LICAFE;
+/* 
+This is the SQL query for cafe c# application.
+*/
+
+CREATE DATABASE LICAFE;
 
 CREATE TABLE ADMIN(
 ADMIN_ID Varchar(50)Not Null check(ADMIN_ID like 'O%')primary key,
